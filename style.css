@@ -279,7 +279,7 @@ footer {
     }
 
     header {
-        background: linear-gradient(to right, #000BBB 52%, #C1002D 50%); /* 手机端背景左右50%分割 */
+        background: linear-gradient(to right, #000BBB 50%, #C1002D 50%); /* 手机端背景左右50%分割 */
         padding-top: 15px;
         padding-bottom: 10px;
         /* min-height 和 border-bottom 保持 */
