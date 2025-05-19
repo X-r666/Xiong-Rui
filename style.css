@@ -1,0 +1,387 @@
+/* 全局样式 */
+body {
+    font-family: 'Arial', 'Microsoft YaHei', sans-serif; /* 优先使用Arial，中文环境使用微软雅黑 */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #000BBB 50%, #C1002D 50%); /* 新背景颜色 - 左右渐变 */
+    color: #FFC100; /* 主要文字颜色 */
+    line-height: 1.6;
+}
+
+p, li, h1, h2, h3, h4, h5, h6, span, div {
+    color: #FFC100; /* 默认将所有常见文本元素颜色设为黄色 */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto; /* 居中显示 */
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* 头部导航栏样式 */
+header {
+    background: linear-gradient(to right, #000BBB 50%, #C1002D 50%); /* 菜单栏背景色 - 左右渐变 */
+    color: #FFC100; /* 文字颜色 */
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #FFC100 3px solid; /* 新边框颜色 - 文字黄 */
+}
+
+header a {
+    color: #FFC100; /* 新文字颜色 */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px; /* 减小字体大小 */
+    transition: color 0.3s ease; /* 鼠标悬停颜色过渡效果 */
+}
+
+header a:hover {
+    color: #FFFFFF !important; /* 鼠标悬停时变为白色 */
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    float: right;
+}
+
+header li {
+    display: inline;
+    padding: 0 15px; /* 减小内边距 */
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+    font-size: 22px; /* 略微减小品牌标题字体大小 */
+}
+
+header #branding h1 .highlight {
+    color: #FFFFFF !important; /* "熊瑞"文字颜色 - 白色, 使用!important确保覆盖 */
+}
+
+header #branding h1 {
+    color: #FFC100 !important; /* 品牌标题中的其他文字保持黄色 */
+}
+
+header .current a {
+    color: #FFC100 !important; /* 当前页面链接用黄色突出 */
+    font-weight: bold;
+    border-bottom: 2px solid #FFFFFF; /* 当前项下方指示线 - 白色 */
+    padding-bottom: 6px; /* 调整指示线空间 */
+}
+
+header .current a:hover {
+    color: #FFFFFF; /* 保持悬停颜色不变 */
+}
+
+/* 页面主标题样式 */
+.page-title {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: #FFC100 !important; /* 新文字颜色 */
+    font-size: 2.5em;
+}
+
+/* 内容区域通用样式 */
+.content-section {
+    background: transparent; /* 背景透明以显示body渐变 */
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px; /* 圆角边框 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); /* 轻微阴影效果 */
+}
+
+.content-section h2 {
+    color: #FFC100 !important; /* 新文字颜色 */
+    border-bottom: 2px solid #FFC100; /* 分隔线颜色与文字统一 */
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* 首页特定样式 */
+.showcase {
+    min-height: 350px;
+    background: transparent; /* showcase区域背景透明 */
+    text-align: center;
+    color: #FFC100; /* 文字颜色 */
+    padding: 80px 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.showcase h1 {
+    font-size: 3.5em; /* 突出姓名 */
+    margin-bottom: 15px;
+    color: #FFC100 !important; /* Showcase标题 - 新文字颜色 */
+}
+
+.showcase p {
+    font-size: 1.5em; /* 简介字体稍大 */
+    color: #FFC100 !important; /* Showcase段落文字 - 新文字颜色 */
+}
+
+.profile-pic {
+    width: 180px; /* 照片尺寸稍大 */
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 25px;
+    border: 5px solid #FFC100; /* 边框颜色 - 新文字黄 */
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.contact-info {
+    padding: 25px;
+    background: transparent; /* contact-info区域背景透明 */
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FFC100 !important; /* 联系信息 - 新文字颜色 */
+}
+
+/* 技能展示页特定样式 */
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill h3 {
+    margin-bottom: 8px;
+    color: #FFC100 !important; /* 新文字颜色 */
+    font-size: 1.3em;
+}
+
+.skill p {
+    margin-bottom: 10px;
+}
+
+.skill-level {
+    background-color: #e0e0e0; /* 进度条背景色 */
+    border-radius: 10px; /* 圆角进度条 */
+    overflow: hidden;
+    height: 25px; /* 进度条高度 */
+    margin-top: 8px;
+}
+
+.skill-progress {
+    background-color: #000BBB; /* 进度条颜色改为蓝色 */
+    height: 100%;
+    color: #FFC100 !important; /* 进度条内文字颜色 */
+    text-align: center; /* 进度文字居中 */
+    line-height: 25px; /* 垂直居中 */
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: 10px 0 0 10px; /* 左侧圆角 */
+    transition: width 0.5s ease-in-out; /* 进度条动画效果 */
+}
+
+/* 学习经历页特定样式 */
+.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 30px; /* 为时间轴线和圆点留出空间 */
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 10px; /* 时间轴线位置 */
+    top: 5px;
+    bottom: 5px;
+    width: 3px; /* 时间轴线宽度 */
+    background: #FFC100; /* 时间轴颜色 - 新文字黄 */
+    border-radius: 2px;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 25px; /* 内容与时间轴的间距 */
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -8px; /* 圆点位置，使其在时间轴线上 */
+    top: 5px;
+    width: 18px; /* 圆点大小 */
+    height: 18px;
+    background: #000BBB; /* 圆点背景色改为蓝色 */
+    border-radius: 50%;
+    border: 3px solid #FFC100; /* 新文字黄色边框 */
+    z-index: 1; /* 确保圆点在轴线之上 */
+}
+
+.timeline-item h3 {
+    margin-top: 0;
+    color: #FFC100 !important; /* 新文字颜色 */
+    font-size: 1.4em;
+    margin-bottom: 8px;
+}
+
+.timeline-item p {
+    margin-bottom: 8px;
+}
+
+.project-item {
+    margin-bottom: 20px;
+}
+
+.project-item h3 {
+    color: #FFC100 !important; /* 新文字颜色 */
+    font-size: 1.3em;
+    margin-bottom: 8px;
+}
+
+/* 关于我页面特定样式 */
+.about-section p {
+    text-indent: 2em; /* 首行缩进 */
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.about-section ul {
+    list-style-type: disc; /* 使用实心圆点列表 */
+    margin-left: 40px; /* 列表缩进 */
+    margin-bottom: 15px;
+}
+
+.about-section li {
+    margin-bottom: 8px;
+}
+
+/* 页脚样式 */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(to right, #000BBB 50%, #C1002D 50%); /* 页脚背景色 - 左右渐变 */
+    color: #FFC100 !important; /* 新文字颜色 */
+    margin-top: 30px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    body {
+        background: linear-gradient(to right, #000BBB 50%, #C1002D 50%); /* 手机端背景左右50%分割 */
+        background-attachment: fixed;
+    }
+
+    header {
+        background: linear-gradient(to right, #000BBB 52%, #C1002D 50%); /* 手机端背景左右50%分割 */
+        padding-top: 15px;
+        padding-bottom: 10px;
+        /* min-height 和 border-bottom 保持 */
+    }
+    footer {
+        background: linear-gradient(to right, #000BBB 50%, #C1002D 50%); /* 手机端页脚左右50%分割 */
+        color: #FFC100;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 20px;
+        border-top: 3px solid #FFC100;
+    }
+    .container {
+        width: 95%; /* 在小屏幕上增加内容区域宽度 */
+        padding: 15px;
+    }
+
+    header #branding {
+        float: none;
+        text-align: center;
+        width: 100%;
+        background: none; /* 确保无独立背景 */
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    header #branding h1 {
+        margin: 0; /* 确保h1没有额外的margin影响布局 */
+        font-size: 22px; /* 与桌面端一致 */
+        color: #FFC100 !important;
+    }
+
+    header #branding h1 .highlight {
+        color: #FFFFFF !important; /* "熊瑞"文字颜色 - 白色 */
+    }
+
+    header nav {
+        width: 100%;
+        overflow-x: auto; /* 允许横向滚动 */
+        -webkit-overflow-scrolling: touch; /* 优化移动端滚动体验 */
+        background: none; /* 确保无独立背景 */
+        padding: 5px 0;
+    }
+
+    header nav ul {
+        white-space: nowrap; /* 防止换行 */
+        padding: 0 10px; /* 左右留出一些边距 */
+        margin: 0;
+        list-style: none;
+        text-align: center; /* 导航项居中 */
+    }
+
+    header nav ul li {
+        display: inline-block; /* 横向排列 */
+        padding: 8px 10px; /* 减小内边距 */
+    }
+
+    header nav ul li a {
+        color: #FFC100 !important; /* 新文字颜色 */
+        text-decoration: none;
+        font-size: 14px; /* 减小字体大小 */
+    }
+
+    header nav ul li.current a,
+    header nav ul li a:hover {
+        color: #FFFFFF !important; /* 当前项和悬停项颜色 - 白色 */
+        border-bottom: 2px solid #FFC100; /* 当前项下方指示线 - 新文字黄 */
+        padding-bottom: 6px; /* 调整指示线空间 */
+    }
+
+    .page-title {
+        font-size: 2em;
+    }
+
+    .showcase h1 {
+        font-size: 2.5em;
+    }
+
+    .showcase p {
+        font-size: 1.2em;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    .timeline:before {
+        left: 5px;
+    }
+
+    .timeline-item {
+        padding-left: 20px;
+    }
+
+    .timeline-item:before {
+        left: -5px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .about-section ul {
+        margin-left: 20px;
+    }
+}
