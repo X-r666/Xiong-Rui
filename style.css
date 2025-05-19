@@ -274,7 +274,7 @@ footer {
 /* 响应式设计 */
 @media (max-width: 768px) {
     body {
-        background: linear-gradient(to right, #000BBB 51,999%, #C1002D 50%); /* 手机端背景左右50%分割 */
+        background: linear-gradient(to right, #000BBB 52% #C1002D 50%); /* 手机端背景左右50%分割 */
         background-attachment: fixed;
     }
 
